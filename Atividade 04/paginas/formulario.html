@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Futebol</title>
+    <link rel="stylesheet" href="../styles/stylesformulario.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Botões de navegação -->
+        <a href="../index.html" class="botao">Copa do Mundo</a>
+        <a href="pagina1.html" class="botao">Brasil campeão</a>
+        <a href="pagina2.html" class="botao">Tabela da La Liga</a>
+        <a href="pagina3.html" class="botao">Video e Audio</a>
+        <a href="pagina4.html" class="botao">Outra pagina</a>
+        
+    </div>
+    
+    <!-- Texto abaixo dos botões -->
+    <div class="form-container">
+        <form action="#" method="POST">
+            <!-- Informações Pessoais -->
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </fieldset>
+
+            <!-- Preferências -->
+            <fieldset>
+                <legend>Preferências</legend>
+                <label for="time">Escolha seu time favorito:</label><br>
+                <input type="radio" id="time1" name="time" value="time1" required> Barcelona <br>
+                <input type="radio" id="time2" name="time" value="time2" required> Real Madrid<br>
+                <input type="radio" id="time3" name="time" value="time3" required> Vasco da Gama<br><br>
+
+                <label for="posicao">Qual posição você prefere jogar?</label><br>
+                <input type="checkbox" id="goleiro" name="posicao" value="goleiro"> Goleiro<br>
+                <input type="checkbox" id="zagueiro" name="posicao" value="zagueiro"> Zagueiro<br>
+                <input type="checkbox" id="meio-campo" name="posicao" value="meio-campo"> Meio-campo<br>
+                <input type="checkbox" id="atacante" name="posicao" value="atacante"> Atacante<br><br>
+
+                <label for="camisa">Tamanho da camisa:</label><br>
+                <select id="camisa" name="camisa">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Experiência e Habilidades -->
+            <fieldset>
+                <legend>Experiência e Habilidades</legend>
+                <label for="anos_jogando">Há quantos anos você joga futebol?</label><br>
+                <input type="number" id="anos_jogando" name="anos_jogando" min="1" max="50" required><br><br>
+
+                <label for="nivel_jogo">Qual é o seu nível de jogo?</label><br>
+                <input type="radio" id="iniciante" name="nivel_jogo" value="iniciante" required> Iniciante<br>
+                <input type="radio" id="intermediario" name="nivel_jogo" value="intermediario" required> Intermediário<br>
+                <input type="radio" id="avancado" name="nivel_jogo" value="avancado" required> Avançado<br><br>
+
+                <label for="experiencia">Qual foi a sua experiência mais marcante jogando futebol?</label><br>
+                <textarea id="experiencia" name="experiencia" rows="4" cols="50" required></textarea><br><br>
+            </fieldset>
+
+            <!-- Preferência de Campeonato -->
+            <fieldset>
+                <legend>Preferência de Campeonato</legend>
+                <label for="campeonato_favorito">Qual é o seu campeonato de futebol favorito?</label><br>
+                <select id="campeonato_favorito" name="campeonato_favorito">
+                    <option value="brasileirao">Brasileirão</option>
+                    <option value="liga_dos_campeoes">Liga dos Campeões</option>
+                    <option value="copa_do_mundo">Copa do Mundo</option>
+                    <option value="libertadores">Libertadores</option>
+                    <option value="europeu">Premier League</option>
+                </select><br><br>
+
+                <label for="assiste_campeonatos">Você costuma assistir aos jogos de futebol?</label><br>
+                <input type="checkbox" id="assiste_sim" name="assiste_campeonatos" value="sim"> Sim<br>
+                <input type="checkbox" id="assiste_nao" name="assiste_campeonatos" value="nao"> Não<br><br>
+            </fieldset>
+
+            <!-- Estilo de Jogo -->
+            <fieldset>
+                <legend>Estilo de Jogo</legend>
+                <label for="estilo_jogo">Qual é o seu estilo de jogo preferido?</label><br>
+                <select id="estilo_jogo" name="estilo_jogo">
+                    <option value="jogo_ofensivo">Ofensivo</option>
+                    <option value="jogo_defensivo">Defensivo</option>
+                    <option value="jogo_equilibrado">Equilibrado</option>
+                    <option value="jogo_tatico">Tático</option>
+                </select><br><br>
+
+                <label for="estrategia_futebol">Qual a sua principal estratégia durante o jogo?</label><br>
+                <textarea id="estrategia_futebol" name="estrategia_futebol" rows="4" cols="50" required></textarea><br><br>
+            </fieldset>
+
+            <!-- Novo campo 1 -->
+            <fieldset>
+                <legend>Objetivos no Futebol</legend>
+                <label for="objetivo">Qual seu principal objetivo no futebol?</label><br>
+                <input type="text" id="objetivo" name="objetivo"><br><br>
+            </fieldset>
+
+            <!-- Novo campo 2 -->
+            <fieldset>
+                <legend>Equipamento e Acessórios</legend>
+                <label for="equipamento">Qual o equipamento que você utiliza mais no futebol?</label><br>
+                <input type="text" id="equipamento" name="equipamento"><br><br>
+            </fieldset>
+
+            <!-- Novo campo 3 -->
+            <fieldset>
+                <legend>Treinamento</legend>
+                <label for="frequencia_treino">Com que frequência você treina futebol?</label><br>
+                <input type="text" id="frequencia_treino" name="frequencia_treino"><br><br>
+            </fieldset>
+
+            <!-- Novo campo 4 -->
+            <fieldset>
+                <legend>Participação em Times</legend>
+                <label for="times">Você já jogou em algum time de futebol?</label><br>
+                <input type="radio" id="sim" name="times" value="sim"> Sim<br>
+                <input type="radio" id="nao" name="times" value="nao"> Não<br><br>
+            </fieldset>
+
+            <!-- Novo campo 5 -->
+            <fieldset>
+                <legend>Preparação Física</legend>
+                <label for="preparacao">Você realiza algum treinamento físico específico para o futebol?</label><br>
+                <input type="checkbox" id="sim" name="preparacao" value="sim"> Sim<br>
+                <input type="checkbox" id="nao" name="preparacao" value="nao"> Não<br><br>
+            </fieldset>
+
+            <!-- Novo campo 6 -->
+            <fieldset>
+                <legend>Histórico de Lesões</legend>
+                <label for="lesao">Você já teve alguma lesão jogando futebol?</label><br>
+                <input type="radio" id="sim" name="lesao" value="sim"> Sim<br>
+                <input type="radio" id="nao" name="lesao" value="nao"> Não<br><br>
+            </fieldset>
+
+            <!-- Novo campo 7 -->
+            <fieldset>
+                <legend>Gostos de Jogo</legend>
+                <label for="jogo_favorito">Qual seu jogo de futebol favorito?</label><br>
+                <input type="text" id="jogo_favorito" name="jogo_favorito"><br><br>
+            </fieldset>
+
+            <!-- Novo campo 8 -->
+            <fieldset>
+                <legend>Comentários Finais</legend>
+                <label for="comentarios">Deixe seus comentários sobre o futebol:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <!-- Opções Finais -->
+            <fieldset>
+                <legend>Opções Finais</legend>
+                <button type="reset">Resetar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Botão de Voltar ao Início -->
+    <button id="voltarTopo" onclick="voltarAoTopo()">Voltar ao Início</button>
+
+    <script>
+        // Função para voltar ao topo da página
+        function voltarAoTopo() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

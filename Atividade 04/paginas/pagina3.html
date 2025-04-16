@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios e Vídeos</title>
+    <link rel="stylesheet" href="../styles/stylespagina3.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Botões de navegação -->
+        <a href="../index.html" class="botao">Copa do Mundo</a>
+        <a href="pagina1.html" class="botao">Brasil campeão</a>
+        <a href="pagina2.html" class="botao">Tabela da La Liga</a>
+        <a href="formulario.html" class="botao">Formulario</a>
+        <a href="pagina4.html" class="botao">Outra pagina</a>
+    </div>
+    <div class="container">
+        <h2>Vídeo</h2>
+        <video controls>
+            <source src="../videos/videoplayback.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <div class="container">
+        <h2>Áudios</h2>
+        <audio controls>
+            <source src="../audios/Iframe Ankara Messi Kara Messi [AlnHNi0hdO0].mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <audio controls>
+            <source src="../audios/Iframe Narração emocionante no gol de Lucas contra o Ajax [lGNA_HPeHPE].mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+</body>
+<body>
+
+    <!-- Botão de Voltar ao Início -->
+<button id="voltarTopo" onclick="voltarAoTopo()">Voltar ao Início</button>
+
+<script>
+    // Função para voltar ao topo da página
+    function voltarAoTopo() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</html>
+

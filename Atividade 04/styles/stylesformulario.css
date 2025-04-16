@@ -1,0 +1,102 @@
+/* Centralizar a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#cceeff;
+    margin: 0;
+    padding: 20px; /* Adicionei um padding para dar espaço no topo da página */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mudando de 'center' para 'flex-start' para evitar corte no topo */
+    min-height: 100vh; /* Permite que a altura mínima seja 100% da tela */
+}
+
+/* Formulário */
+.form-container {
+    background-color: #cceeff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Estilizando os fieldsets */
+fieldset {
+    border: 2px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Estilo dos inputs */
+input[type="text"], input[type="number"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilizando os botões */
+button[type="reset"], button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="reset"]:hover, button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+ /* Estilo para o botão voltar para o topo */
+ #voltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilo para os botões  Dos Links*/
+.botao {
+    background-color: #5b48b3;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin: 10px; /* Espaçamento entre os botões */
+}
+
+.botao:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o container dos botões */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 50px;
+}

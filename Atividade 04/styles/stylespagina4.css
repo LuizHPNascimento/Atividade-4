@@ -1,0 +1,173 @@
+/* Centralizando todos os títulos */
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Adicionando ícones aos títulos */
+li::before {
+    content: "⚽ "; /* Ícone de bola de futebol antes de cada item */
+}
+
+h1::before {
+    content: '\26BD'; /* Ícone de bola de futebol */
+    font-size: 1.5em;
+    color: #007a33;
+}
+
+h2::before {
+    content: '\1F3C6'; /* Ícone de troféu */
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+/* Alterando a cor de fundo para tons suaves */
+body {
+    background-color: #001f3f;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adicionando sombra e borda nas caixas de conteúdo */
+.box {
+    background-color: #001f3f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Criando espaçamento adequado entre os itens da lista */
+ul {
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Efeito de transição suave para links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+/* Estilo para cabeçalhos */
+h1, h2 {
+    color: #003366;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilo para parágrafos dentro das caixas */
+.box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Layout de múltiplas colunas para o artigo */
+.article {
+    column-count: 3;
+    column-gap: 20px;
+    margin: 20px;
+}
+
+/* Responsividade: ajustando a largura e a coluna no mobile */
+@media screen and (max-width: 768px) {
+    .article {
+        column-count: 1;
+    }
+    .box {
+        margin: 10px;
+    }
+}
+
+/* Estilo de links dentro de listas */
+ul a {
+    font-weight: bold;
+    color: #003366;
+}
+
+ul a:hover {
+    color: #ff6600;
+}
+
+/* Adicionando um rodapé estilizado */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Botões estilizados */
+.button {
+    background-color: #007a33;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #005a23;
+}
+  /* Estilo para o botão voltar para o topo */
+  #voltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#voltarTopo:hover {
+    background-color: #0056b3;
+}
+ /* Estilo para os botões  Dos Links*/
+ .botao {
+    background-color: #5b48b3;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin: 10px; /* Espaçamento entre os botões */
+}
+
+.botao:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o container dos botões */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 50px;
+}
